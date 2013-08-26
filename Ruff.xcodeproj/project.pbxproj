@@ -14,6 +14,13 @@
 		6814658C17CAD98D00BB196A /* GB2ShapeCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6814658017CAD98D00BB196A /* GB2ShapeCache.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6814658D17CAD98D00BB196A /* GB2Sprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6814658217CAD98D00BB196A /* GB2Sprite.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6814658E17CAD98D00BB196A /* GB2WorldContactListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6814658417CAD98D00BB196A /* GB2WorldContactListener.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6814659C17CAE00400BB196A /* ruff-attack-one.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6814659317CAE00400BB196A /* ruff-attack-one.plist */; };
+		6814659D17CAE00400BB196A /* ruff-attack-one.pes in Resources */ = {isa = PBXBuildFile; fileRef = 6814659517CAE00400BB196A /* ruff-attack-one.pes */; };
+		6814659E17CAE00400BB196A /* ruff-run.pes in Resources */ = {isa = PBXBuildFile; fileRef = 6814659617CAE00400BB196A /* ruff-run.pes */; };
+		6814659F17CAE00400BB196A /* ruff-sprite-sheet-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6814659817CAE00400BB196A /* ruff-sprite-sheet-ipad.plist */; };
+		681465A017CAE00400BB196A /* ruff-sprite-sheet-ipad.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 6814659917CAE00400BB196A /* ruff-sprite-sheet-ipad.pvr.ccz */; };
+		681465A117CAE00400BB196A /* ruff-sprite-sheet-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6814659A17CAE00400BB196A /* ruff-sprite-sheet-ipadhd.plist */; };
+		681465A217CAE00400BB196A /* ruff-sprite-sheet-ipadhd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 6814659B17CAE00400BB196A /* ruff-sprite-sheet-ipadhd.pvr.ccz */; };
 		687FB3DA17B8D6B800790242 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687FB3D917B8D6B800790242 /* QuartzCore.framework */; };
 		687FB3DC17B8D6B800790242 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687FB3DB17B8D6B800790242 /* OpenGLES.framework */; };
 		687FB3DE17B8D6B800790242 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687FB3DD17B8D6B800790242 /* OpenAL.framework */; };
@@ -196,15 +203,6 @@
 		687FB83817B8DBBE00790242 /* vec2.c in Sources */ = {isa = PBXBuildFile; fileRef = 687FB79B17B8DBBE00790242 /* vec2.c */; };
 		687FB83917B8DBBE00790242 /* vec3.c in Sources */ = {isa = PBXBuildFile; fileRef = 687FB79C17B8DBBE00790242 /* vec3.c */; };
 		687FB83A17B8DBBE00790242 /* vec4.c in Sources */ = {isa = PBXBuildFile; fileRef = 687FB79D17B8DBBE00790242 /* vec4.c */; };
-		687FB84917B8E2F800790242 /* ruff-run-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 687FB84017B8E2F800790242 /* ruff-run-01.png */; };
-		687FB84A17B8E2F800790242 /* ruff-run-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 687FB84117B8E2F800790242 /* ruff-run-02.png */; };
-		687FB84B17B8E2F800790242 /* ruff-run-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 687FB84217B8E2F800790242 /* ruff-run-03.png */; };
-		687FB84C17B8E2F800790242 /* ruff-run-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 687FB84317B8E2F800790242 /* ruff-run-04.png */; };
-		687FB84D17B8E2F800790242 /* ruff-run-05.png in Resources */ = {isa = PBXBuildFile; fileRef = 687FB84417B8E2F800790242 /* ruff-run-05.png */; };
-		687FB84E17B8E2F800790242 /* ruff-run-06.png in Resources */ = {isa = PBXBuildFile; fileRef = 687FB84517B8E2F800790242 /* ruff-run-06.png */; };
-		687FB84F17B8E2F800790242 /* ruff-run-07.png in Resources */ = {isa = PBXBuildFile; fileRef = 687FB84617B8E2F800790242 /* ruff-run-07.png */; };
-		687FB85017B8E2F800790242 /* ruff-run-08.png in Resources */ = {isa = PBXBuildFile; fileRef = 687FB84717B8E2F800790242 /* ruff-run-08.png */; };
-		687FB85117B8E2F800790242 /* ruff-run-shapes.pes in Resources */ = {isa = PBXBuildFile; fileRef = 687FB84817B8E2F800790242 /* ruff-run-shapes.pes */; };
 		687FB85617B8E4C900790242 /* ruff-sprite-sheet-ipad.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 687FB85217B8E4C900790242 /* ruff-sprite-sheet-ipad.pvr.ccz */; };
 		687FB85717B8E4C900790242 /* ruff-sprite-sheet-ipadhd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 687FB85317B8E4C900790242 /* ruff-sprite-sheet-ipadhd.pvr.ccz */; };
 		687FB85817B8E4C900790242 /* ruff-sprite-sheet-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687FB85417B8E4C900790242 /* ruff-sprite-sheet-ipad.plist */; };
@@ -241,6 +239,13 @@
 		6814658317CAD98D00BB196A /* GB2WorldContactListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GB2WorldContactListener.h; sourceTree = "<group>"; };
 		6814658417CAD98D00BB196A /* GB2WorldContactListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GB2WorldContactListener.mm; sourceTree = "<group>"; };
 		6814658717CAD98D00BB196A /* GMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMath.h; sourceTree = "<group>"; };
+		6814659317CAE00400BB196A /* ruff-attack-one.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ruff-attack-one.plist"; sourceTree = "<group>"; };
+		6814659517CAE00400BB196A /* ruff-attack-one.pes */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ruff-attack-one.pes"; sourceTree = "<group>"; };
+		6814659617CAE00400BB196A /* ruff-run.pes */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ruff-run.pes"; sourceTree = "<group>"; };
+		6814659817CAE00400BB196A /* ruff-sprite-sheet-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ruff-sprite-sheet-ipad.plist"; sourceTree = "<group>"; };
+		6814659917CAE00400BB196A /* ruff-sprite-sheet-ipad.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ruff-sprite-sheet-ipad.pvr.ccz"; sourceTree = "<group>"; };
+		6814659A17CAE00400BB196A /* ruff-sprite-sheet-ipadhd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ruff-sprite-sheet-ipadhd.plist"; sourceTree = "<group>"; };
+		6814659B17CAE00400BB196A /* ruff-sprite-sheet-ipadhd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ruff-sprite-sheet-ipadhd.pvr.ccz"; sourceTree = "<group>"; };
 		687FB3D617B8D6B800790242 /* Ruff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ruff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		687FB3D917B8D6B800790242 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		687FB3DB17B8D6B800790242 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -620,15 +625,6 @@
 		687FB79F17B8DBBE00790242 /* LICENSE_cocos2d.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_cocos2d.txt; sourceTree = "<group>"; };
 		687FB7A017B8DBBE00790242 /* LICENSE_CocosDenshion.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_CocosDenshion.txt; sourceTree = "<group>"; };
 		687FB7A117B8DBBE00790242 /* LICENSE_Kazmath.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_Kazmath.txt; sourceTree = "<group>"; };
-		687FB84017B8E2F800790242 /* ruff-run-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ruff-run-01.png"; sourceTree = "<group>"; };
-		687FB84117B8E2F800790242 /* ruff-run-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ruff-run-02.png"; sourceTree = "<group>"; };
-		687FB84217B8E2F800790242 /* ruff-run-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ruff-run-03.png"; sourceTree = "<group>"; };
-		687FB84317B8E2F800790242 /* ruff-run-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ruff-run-04.png"; sourceTree = "<group>"; };
-		687FB84417B8E2F800790242 /* ruff-run-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ruff-run-05.png"; sourceTree = "<group>"; };
-		687FB84517B8E2F800790242 /* ruff-run-06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ruff-run-06.png"; sourceTree = "<group>"; };
-		687FB84617B8E2F800790242 /* ruff-run-07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ruff-run-07.png"; sourceTree = "<group>"; };
-		687FB84717B8E2F800790242 /* ruff-run-08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ruff-run-08.png"; sourceTree = "<group>"; };
-		687FB84817B8E2F800790242 /* ruff-run-shapes.pes */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ruff-run-shapes.pes"; sourceTree = "<group>"; };
 		687FB85217B8E4C900790242 /* ruff-sprite-sheet-ipad.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ruff-sprite-sheet-ipad.pvr.ccz"; path = "Resources/ruff-sprite-sheet-ipad.pvr.ccz"; sourceTree = "<group>"; };
 		687FB85317B8E4C900790242 /* ruff-sprite-sheet-ipadhd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ruff-sprite-sheet-ipadhd.pvr.ccz"; path = "Resources/ruff-sprite-sheet-ipadhd.pvr.ccz"; sourceTree = "<group>"; };
 		687FB85417B8E4C900790242 /* ruff-sprite-sheet-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ruff-sprite-sheet-ipad.plist"; path = "Resources/ruff-sprite-sheet-ipad.plist"; sourceTree = "<group>"; };
@@ -689,6 +685,52 @@
 			path = GBox2D;
 			sourceTree = "<group>";
 		};
+		6814659017CAE00400BB196A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				6814659117CAE00400BB196A /* Ruff */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		6814659117CAE00400BB196A /* Ruff */ = {
+			isa = PBXGroup;
+			children = (
+				6814659217CAE00400BB196A /* Bodies */,
+				6814659717CAE00400BB196A /* SpriteSheets */,
+			);
+			path = Ruff;
+			sourceTree = "<group>";
+		};
+		6814659217CAE00400BB196A /* Bodies */ = {
+			isa = PBXGroup;
+			children = (
+				6814659317CAE00400BB196A /* ruff-attack-one.plist */,
+				6814659417CAE00400BB196A /* Source */,
+			);
+			path = Bodies;
+			sourceTree = "<group>";
+		};
+		6814659417CAE00400BB196A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6814659517CAE00400BB196A /* ruff-attack-one.pes */,
+				6814659617CAE00400BB196A /* ruff-run.pes */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		6814659717CAE00400BB196A /* SpriteSheets */ = {
+			isa = PBXGroup;
+			children = (
+				6814659817CAE00400BB196A /* ruff-sprite-sheet-ipad.plist */,
+				6814659917CAE00400BB196A /* ruff-sprite-sheet-ipad.pvr.ccz */,
+				6814659A17CAE00400BB196A /* ruff-sprite-sheet-ipadhd.plist */,
+				6814659B17CAE00400BB196A /* ruff-sprite-sheet-ipadhd.pvr.ccz */,
+			);
+			path = SpriteSheets;
+			sourceTree = "<group>";
+		};
 		687FB3CD17B8D6B800790242 = {
 			isa = PBXGroup;
 			children = (
@@ -727,8 +769,8 @@
 		687FB3ED17B8D6B800790242 /* Ruff */ = {
 			isa = PBXGroup;
 			children = (
+				6814659017CAE00400BB196A /* Assets */,
 				6814657517CAD98D00BB196A /* GBox2D */,
-				687FB83C17B8E2F800790242 /* Assets */,
 				687FB83B17B8E19300790242 /* Hero */,
 				687FB61117B8D6BE00790242 /* AppDelegate.h */,
 				687FB61217B8D6BE00790242 /* AppDelegate.mm */,
@@ -1297,46 +1339,6 @@
 			name = Hero;
 			sourceTree = "<group>";
 		};
-		687FB83C17B8E2F800790242 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				687FB83D17B8E2F800790242 /* Animations */,
-				687FB84817B8E2F800790242 /* ruff-run-shapes.pes */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
-		687FB83D17B8E2F800790242 /* Animations */ = {
-			isa = PBXGroup;
-			children = (
-				687FB83E17B8E2F800790242 /* Ruff */,
-			);
-			path = Animations;
-			sourceTree = "<group>";
-		};
-		687FB83E17B8E2F800790242 /* Ruff */ = {
-			isa = PBXGroup;
-			children = (
-				687FB83F17B8E2F800790242 /* run */,
-			);
-			path = Ruff;
-			sourceTree = "<group>";
-		};
-		687FB83F17B8E2F800790242 /* run */ = {
-			isa = PBXGroup;
-			children = (
-				687FB84017B8E2F800790242 /* ruff-run-01.png */,
-				687FB84117B8E2F800790242 /* ruff-run-02.png */,
-				687FB84217B8E2F800790242 /* ruff-run-03.png */,
-				687FB84317B8E2F800790242 /* ruff-run-04.png */,
-				687FB84417B8E2F800790242 /* ruff-run-05.png */,
-				687FB84517B8E2F800790242 /* ruff-run-06.png */,
-				687FB84617B8E2F800790242 /* ruff-run-07.png */,
-				687FB84717B8E2F800790242 /* ruff-run-08.png */,
-			);
-			path = run;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1418,20 +1420,18 @@
 				687FB40217B8D6B800790242 /* Icon@2x.png in Resources */,
 				687FB40517B8D6B800790242 /* iTunesArtwork in Resources */,
 				687FB61E17B8D6BE00790242 /* blocks.png in Resources */,
-				687FB84917B8E2F800790242 /* ruff-run-01.png in Resources */,
-				687FB84A17B8E2F800790242 /* ruff-run-02.png in Resources */,
-				687FB84B17B8E2F800790242 /* ruff-run-03.png in Resources */,
-				687FB84C17B8E2F800790242 /* ruff-run-04.png in Resources */,
-				687FB84D17B8E2F800790242 /* ruff-run-05.png in Resources */,
-				687FB84E17B8E2F800790242 /* ruff-run-06.png in Resources */,
-				687FB84F17B8E2F800790242 /* ruff-run-07.png in Resources */,
-				687FB85017B8E2F800790242 /* ruff-run-08.png in Resources */,
-				687FB85117B8E2F800790242 /* ruff-run-shapes.pes in Resources */,
 				687FB85617B8E4C900790242 /* ruff-sprite-sheet-ipad.pvr.ccz in Resources */,
 				687FB85717B8E4C900790242 /* ruff-sprite-sheet-ipadhd.pvr.ccz in Resources */,
 				687FB85817B8E4C900790242 /* ruff-sprite-sheet-ipad.plist in Resources */,
 				687FB85917B8E4C900790242 /* ruff-sprite-sheet-ipadhd.plist in Resources */,
 				687FB85B17B8EC2A00790242 /* ruff-run-shapes.plist in Resources */,
+				6814659C17CAE00400BB196A /* ruff-attack-one.plist in Resources */,
+				6814659D17CAE00400BB196A /* ruff-attack-one.pes in Resources */,
+				6814659E17CAE00400BB196A /* ruff-run.pes in Resources */,
+				6814659F17CAE00400BB196A /* ruff-sprite-sheet-ipad.plist in Resources */,
+				681465A017CAE00400BB196A /* ruff-sprite-sheet-ipad.pvr.ccz in Resources */,
+				681465A117CAE00400BB196A /* ruff-sprite-sheet-ipadhd.plist in Resources */,
+				681465A217CAE00400BB196A /* ruff-sprite-sheet-ipadhd.pvr.ccz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

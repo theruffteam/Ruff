@@ -51,7 +51,6 @@ enum {
 	if( (self=[super init])) {
 		
 		// enable events
-		
 		self.touchEnabled = YES;
 		self.accelerometerEnabled = YES;
 		CGSize s = [CCDirector sharedDirector].winSize;
@@ -62,12 +61,10 @@ enum {
 		// create reset button
 		[self createMenu];
         
-        // setup test sprite for Ruff game
-		//Set up sprite
-        // doesn't use batch node. Slower
-		CCSpriteBatchNode *ruff = [CCSpriteBatchNode batchNodeWithFile:@"ruff-run-01.png" capacity:100];
-		ruffSpriteTexture = [ruff texture];
-        [self addChild:ruff z:1 tag:100];
+        // 08-25-2013 - Troy: Testing spriteframe loading
+        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"ruff-sprite-sheet.plist"];
+		CCNode *parentNode = [CCNode node];
+        [self addChild:parentNode z:1 tag:100];
         [self addNewRuffSpriteAtPosition:ccp(100,100)];
 #if 1
 		// Use batch node. Faster
@@ -293,7 +290,7 @@ enum {
 	//just randomly picking one of the images
 	int idx = (CCRANDOM_0_1() > .5 ? 0:1);
 	int idy = (CCRANDOM_0_1() > .5 ? 0:1);
-	CCPhysicsSprite *sprite = [CCPhysicsSprite spriteWithTexture:ruffSpriteTexture];
+    CCPhysicsSprite *sprite = [CCPhysicsSprite spriteWithSpriteFrameName:@"ruff-attack-one-01.png"];
 	[parent addChild:sprite];
 	
 	[sprite setPTMRatio:PTM_RATIO];
