@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6814658817CAD98D00BB196A /* GB2Contact.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6814657817CAD98D00BB196A /* GB2Contact.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6814658917CAD98D00BB196A /* GB2DebugDrawLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6814657A17CAD98D00BB196A /* GB2DebugDrawLayer.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6814658A17CAD98D00BB196A /* GB2Engine.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6814657C17CAD98D00BB196A /* GB2Engine.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6814658B17CAD98D00BB196A /* GB2Node.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6814657E17CAD98D00BB196A /* GB2Node.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6814658C17CAD98D00BB196A /* GB2ShapeCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6814658017CAD98D00BB196A /* GB2ShapeCache.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6814658D17CAD98D00BB196A /* GB2Sprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6814658217CAD98D00BB196A /* GB2Sprite.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6814658E17CAD98D00BB196A /* GB2WorldContactListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6814658417CAD98D00BB196A /* GB2WorldContactListener.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		687FB3DA17B8D6B800790242 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687FB3D917B8D6B800790242 /* QuartzCore.framework */; };
 		687FB3DC17B8D6B800790242 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687FB3DB17B8D6B800790242 /* OpenGLES.framework */; };
 		687FB3DE17B8D6B800790242 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687FB3DD17B8D6B800790242 /* OpenAL.framework */; };
@@ -218,6 +225,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6814657617CAD98D00BB196A /* GB2Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GB2Config.h; sourceTree = "<group>"; };
+		6814657717CAD98D00BB196A /* GB2Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GB2Contact.h; sourceTree = "<group>"; };
+		6814657817CAD98D00BB196A /* GB2Contact.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GB2Contact.mm; sourceTree = "<group>"; };
+		6814657917CAD98D00BB196A /* GB2DebugDrawLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GB2DebugDrawLayer.h; sourceTree = "<group>"; };
+		6814657A17CAD98D00BB196A /* GB2DebugDrawLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GB2DebugDrawLayer.mm; sourceTree = "<group>"; };
+		6814657B17CAD98D00BB196A /* GB2Engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GB2Engine.h; sourceTree = "<group>"; };
+		6814657C17CAD98D00BB196A /* GB2Engine.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GB2Engine.mm; sourceTree = "<group>"; };
+		6814657D17CAD98D00BB196A /* GB2Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GB2Node.h; sourceTree = "<group>"; };
+		6814657E17CAD98D00BB196A /* GB2Node.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GB2Node.mm; sourceTree = "<group>"; };
+		6814657F17CAD98D00BB196A /* GB2ShapeCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GB2ShapeCache.h; sourceTree = "<group>"; };
+		6814658017CAD98D00BB196A /* GB2ShapeCache.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GB2ShapeCache.mm; sourceTree = "<group>"; };
+		6814658117CAD98D00BB196A /* GB2Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GB2Sprite.h; sourceTree = "<group>"; };
+		6814658217CAD98D00BB196A /* GB2Sprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GB2Sprite.mm; sourceTree = "<group>"; };
+		6814658317CAD98D00BB196A /* GB2WorldContactListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GB2WorldContactListener.h; sourceTree = "<group>"; };
+		6814658417CAD98D00BB196A /* GB2WorldContactListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GB2WorldContactListener.mm; sourceTree = "<group>"; };
+		6814658717CAD98D00BB196A /* GMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMath.h; sourceTree = "<group>"; };
 		687FB3D617B8D6B800790242 /* Ruff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ruff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		687FB3D917B8D6B800790242 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		687FB3DB17B8D6B800790242 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -643,6 +666,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6814657517CAD98D00BB196A /* GBox2D */ = {
+			isa = PBXGroup;
+			children = (
+				6814657617CAD98D00BB196A /* GB2Config.h */,
+				6814657717CAD98D00BB196A /* GB2Contact.h */,
+				6814657817CAD98D00BB196A /* GB2Contact.mm */,
+				6814657917CAD98D00BB196A /* GB2DebugDrawLayer.h */,
+				6814657A17CAD98D00BB196A /* GB2DebugDrawLayer.mm */,
+				6814657B17CAD98D00BB196A /* GB2Engine.h */,
+				6814657C17CAD98D00BB196A /* GB2Engine.mm */,
+				6814657D17CAD98D00BB196A /* GB2Node.h */,
+				6814657E17CAD98D00BB196A /* GB2Node.mm */,
+				6814657F17CAD98D00BB196A /* GB2ShapeCache.h */,
+				6814658017CAD98D00BB196A /* GB2ShapeCache.mm */,
+				6814658117CAD98D00BB196A /* GB2Sprite.h */,
+				6814658217CAD98D00BB196A /* GB2Sprite.mm */,
+				6814658317CAD98D00BB196A /* GB2WorldContactListener.h */,
+				6814658417CAD98D00BB196A /* GB2WorldContactListener.mm */,
+				6814658717CAD98D00BB196A /* GMath.h */,
+			);
+			path = GBox2D;
+			sourceTree = "<group>";
+		};
 		687FB3CD17B8D6B800790242 = {
 			isa = PBXGroup;
 			children = (
@@ -681,6 +727,7 @@
 		687FB3ED17B8D6B800790242 /* Ruff */ = {
 			isa = PBXGroup;
 			children = (
+				6814657517CAD98D00BB196A /* GBox2D */,
 				687FB83C17B8E2F800790242 /* Assets */,
 				687FB83B17B8E19300790242 /* Hero */,
 				687FB61117B8D6BE00790242 /* AppDelegate.h */,
@@ -1400,6 +1447,13 @@
 				687FB61617B8D6BE00790242 /* HelloWorldLayer.mm in Sources */,
 				687FB61917B8D6BE00790242 /* IntroLayer.mm in Sources */,
 				687FB61C17B8D6BE00790242 /* GLES-Render.mm in Sources */,
+				6814658817CAD98D00BB196A /* GB2Contact.mm in Sources */,
+				6814658917CAD98D00BB196A /* GB2DebugDrawLayer.mm in Sources */,
+				6814658A17CAD98D00BB196A /* GB2Engine.mm in Sources */,
+				6814658B17CAD98D00BB196A /* GB2Node.mm in Sources */,
+				6814658C17CAD98D00BB196A /* GB2ShapeCache.mm in Sources */,
+				6814658D17CAD98D00BB196A /* GB2Sprite.mm in Sources */,
+				6814658E17CAD98D00BB196A /* GB2WorldContactListener.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
