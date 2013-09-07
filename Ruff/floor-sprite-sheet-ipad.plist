@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>floor.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{0,0},{770,111}}</string>
+			<key>offset</key>
+			<string>{0,0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0,0},{770,111}}</string>
+			<key>sourceSize</key>
+			<string>{770,111}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>realTextureFileName</key>
+		<string>floor-sprite-sheet-ipad.pvr.ccz</string>
+		<key>size</key>
+		<string>{1024,128}</string>
+		<key>smartupdate</key>
+		<string>$TexturePacker:SmartUpdate:579dd4f03c87a490c3591aae9b74b54a$</string>
+		<key>textureFileName</key>
+		<string>floor-sprite-sheet-ipad.pvr.ccz</string>
+	</dict>
+</dict>
+</plist>

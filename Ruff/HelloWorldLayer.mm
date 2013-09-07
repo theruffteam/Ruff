@@ -15,6 +15,11 @@
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
 
+#import "Floor.h"
+
+#import "GB2DebugDrawLayer.h"
+
+#import "Ruff.h"
 
 enum {
 	kTagParentNode = 1,
@@ -53,38 +58,48 @@ enum {
 		// enable events
 		self.touchEnabled = YES;
 		self.accelerometerEnabled = YES;
-		CGSize s = [CCDirector sharedDirector].winSize;
 		
 		// init physics
 		[self initPhysics];
 		
 		// create reset button
-		[self createMenu];
+		//[self createMenu];
         
-        // 08-25-2013 - Troy: Testing spriteframe loading
+// BEGIN 09-26-2013 - Troy
+        // Load our sprite frames
+        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"floor-sprite-sheet.plist"];
         [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"ruff-sprite-sheet.plist"];
-		CCNode *parentNode = [CCNode node];
-        [self addChild:parentNode z:1 tag:100];
-        [self addNewRuffSpriteAtPosition:ccp(100,100)];
-#if 1
-		// Use batch node. Faster
-		CCSpriteBatchNode *parent = [CCSpriteBatchNode batchNodeWithFile:@"blocks.png" capacity:100];
-		spriteTexture_ = [parent texture];
-#else
-		// doesn't use batch node. Slower
-		spriteTexture_ = [[CCTextureCache sharedTextureCache] addImage:@"blocks.png"];
-		CCNode *parent = [CCNode node];
-#endif
-		[self addChild:parent z:0 tag:kTagParentNode];
+        
+        // 09-26-2013 - Troy: Load our physics shapes
+        [[GB2ShapeCache sharedShapeCache] addShapesWithFile:@"floor-shapes.plist"];        
+        [[GB2ShapeCache sharedShapeCache] addShapesWithFile:@"ruff-shapes.plist"];
+        
+        
+        floorBackground = [[CCSprite alloc] init];//]spriteWithSpriteFrameName:@"floor.png"];
+        [self addChild:floorBackground z:5];
+        floorBackground.anchorPoint = ccp(0,0);
+        floorBackground.position = ccp(0,0);
+        
+        objects = [CCSpriteBatchNode batchNodeWithFile:@"floor-sprite-sheet.pvr.ccz" capacity:10];
+        
+        objectLayer = [[CCSprite alloc] init];
+        
+        [objectLayer addChild:objects];
+        
+        [self addChild:objectLayer z:10];
+        
+        [floorBackground addChild:[[Floor floorSprite] ccNode] z:20];
+        
+        // comment out the following line to remove the collision boxes overlay
+        // on the screen
+        [self addChild:[[GB2DebugDrawLayer alloc] init] z:30];
 		
-		
-		[self addNewSpriteAtPosition:ccp(s.width/2, s.height/2)];
-		
-		CCLabelTTF *label = [CCLabelTTF labelWithString:@"Tap screen" fontName:@"Marker Felt" fontSize:32];
-		[self addChild:label z:0];
-		[label setColor:ccc3(0,0,255)];
-		label.position = ccp( s.width/2, s.height-50);
-		
+        
+        ruff = [[Ruff alloc] initWithGameLayer:self];
+        [objectLayer addChild:[ruff ccNode] z:10000];
+        [ruff setPhysicsPosition:b2Vec2FromCC(240,150)];
+// END 09-26-2013 - Troy
+        
 		[self scheduleUpdate];
 	}
 	return self;
@@ -110,36 +125,8 @@ enum {
 		[[CCDirector sharedDirector] replaceScene: [HelloWorldLayer scene]];
 	}];
 
-	// to avoid a retain-cycle with the menuitem and blocks
-	__block id copy_self = self;
-
-	// Achievement Menu Item using blocks
-	CCMenuItem *itemAchievement = [CCMenuItemFont itemWithString:@"Achievements" block:^(id sender) {
-		
-		
-		GKAchievementViewController *achivementViewController = [[GKAchievementViewController alloc] init];
-		achivementViewController.achievementDelegate = copy_self;
-		
-		AppController *app = (AppController*) [[UIApplication sharedApplication] delegate];
-		
-		[[app navController] presentModalViewController:achivementViewController animated:YES];
-		
-	}];
 	
-	// Leaderboard Menu Item using blocks
-	CCMenuItem *itemLeaderboard = [CCMenuItemFont itemWithString:@"Leaderboard" block:^(id sender) {
-		
-		
-		GKLeaderboardViewController *leaderboardViewController = [[GKLeaderboardViewController alloc] init];
-		leaderboardViewController.leaderboardDelegate = copy_self;
-		
-		AppController *app = (AppController*) [[UIApplication sharedApplication] delegate];
-		
-		[[app navController] presentModalViewController:leaderboardViewController animated:YES];
-		
-	}];
-	
-	CCMenu *menu = [CCMenu menuWithItems:itemAchievement, itemLeaderboard, reset, nil];
+	CCMenu *menu = [CCMenu menuWithItems:reset, nil];
 	
 	[menu alignItemsVertically];
 	
@@ -325,20 +312,6 @@ enum {
 		
 		[self addNewSpriteAtPosition: location];
 	}
-}
-
-#pragma mark GameKit delegate
-
--(void) achievementViewControllerDidFinish:(GKAchievementViewController *)viewController
-{
-	AppController *app = (AppController*) [[UIApplication sharedApplication] delegate];
-	[[app navController] dismissModalViewControllerAnimated:YES];
-}
-
--(void) leaderboardViewControllerDidFinish:(GKLeaderboardViewController *)viewController
-{
-	AppController *app = (AppController*) [[UIApplication sharedApplication] delegate];
-	[[app navController] dismissModalViewControllerAnimated:YES];
 }
 
 @end
